@@ -20,3 +20,9 @@
 
 # Ignore bower files
 /vendor/assets/components/*
+
+# Ignore setting for environment
+/.env
+
+# Ignore coveralls
+/coverage
