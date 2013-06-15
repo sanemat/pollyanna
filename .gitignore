@@ -17,3 +17,6 @@
 
 # Ignore database setting.
 /config/database.yml
+
+# Ignore bower files
+/vendor/assets/components/*
