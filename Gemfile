@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 1.2'
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails', '>= 2.14.0.rc'
+  gem 'spring'
 end
 
 group :development do
