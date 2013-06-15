@@ -50,6 +50,8 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 gem 'puma'
 
+gem 'coveralls', require: false
+
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
