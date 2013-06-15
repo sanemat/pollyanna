@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "session/create"
   root 'messages#index'
   resources :messages
   # The priority is based upon order of creation: first created -> highest priority.
