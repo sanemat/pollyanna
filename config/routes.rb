@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "help/detail"
   get "session/create"
   root 'messages#index'
   resources :messages
