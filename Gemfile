@@ -29,6 +29,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'omniauth-identity'
+gem 'omniauth'
+gem 'authority'
+gem 'rolify'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails', '>= 2.14.0.rc'
@@ -41,7 +46,7 @@ group :development do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 gem 'puma'
 
