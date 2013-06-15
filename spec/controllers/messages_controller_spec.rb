@@ -23,7 +23,8 @@ describe MessagesController do
   # This should return the minimal set of attributes required to create a valid
   # Message. As you add validations to Message, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { user_id: User.create!.id, body: 'body' } }
+  let(:valid_attributes) { { body: 'body' } }
+  let!(:user) { User.create! }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -67,18 +68,21 @@ describe MessagesController do
   describe "POST create" do
     describe "with valid params" do
       it "creates a new Message" do
+        ApplicationController.any_instance.stub(:current_user).and_return(user)
         expect {
           post :create, {:message => valid_attributes}, valid_session
         }.to change(Message, :count).by(1)
       end
 
       it "assigns a newly created message as @message" do
+        ApplicationController.any_instance.stub(:current_user).and_return(user)
         post :create, {:message => valid_attributes}, valid_session
         assigns(:message).should be_a(Message)
         assigns(:message).should be_persisted
       end
 
       it "redirects to the created message" do
+        ApplicationController.any_instance.stub(:current_user).and_return(user)
         post :create, {:message => valid_attributes}, valid_session
         response.should redirect_to(Message.last)
       end
