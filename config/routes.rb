@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get "help/detail"
-  get "session/create"
+  get 'help/detail'
+  get 'session/create'
   root 'help#detail'
   resources :messages
   # The priority is based upon order of creation: first created -> highest priority.
