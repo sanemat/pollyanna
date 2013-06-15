@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/intridea/omniauth-identity.git
+  revision: 11f0395d9fed03b13f8f528b18eb54235b0d8acd
+  specs:
+    omniauth-identity (1.1.0)
+      bcrypt-ruby (~> 3.0)
+      omniauth (~> 1.0)
+
+GIT
   remote: git://github.com/rails/rails.git
   revision: a9a33c59f64084733baec62aed4852fde6a88156
   specs:
@@ -94,9 +102,6 @@ GEM
     omniauth (1.1.4)
       hashie (>= 1.2, < 3)
       rack
-    omniauth-identity (1.1.0)
-      bcrypt-ruby (~> 3.0)
-      omniauth (~> 1.0)
     pg (0.15.1)
     polyglot (0.3.3)
     pry (0.9.12.2)
@@ -166,7 +171,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   omniauth
-  omniauth-identity
+  omniauth-identity!
   pg
   pry-rails
   puma
