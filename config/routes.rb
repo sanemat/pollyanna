@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get "help/detail"
   get "session/create"
-  root 'messages#index'
+  root 'help#detail'
   resources :messages
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
