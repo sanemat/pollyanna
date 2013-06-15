@@ -25,9 +25,9 @@ ActiveRecord::Schema.define(version: 20130615102401) do
   end
 
   create_table "messages", force: true do |t|
-    t.integer  "user_id"
+    t.integer  "user_id",                     null: false
     t.text     "body"
-    t.boolean  "verified"
+    t.boolean  "verified",    default: false
     t.datetime "verified_at"
     t.datetime "created_at"
     t.datetime "updated_at"
