@@ -1,0 +1,12 @@
+{
+  "name": "pollyanna",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "sass-bootstrap": "2.3.2"
+  }
+}
