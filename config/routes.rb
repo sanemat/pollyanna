@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'help/detail'
   post 'auth/:provider/callback' => 'sessions#create'
+  get 'signout', to: 'sessions#destroy', as: 'signout'
+  get 'auth/failure', to: redirect('/')
   root 'help#detail'
   resources :messages
   # The priority is based upon order of creation: first created -> highest priority.
