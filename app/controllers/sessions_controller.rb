@@ -2,6 +2,9 @@ class SessionsController < ApplicationController
   #NOTE: I don't understand yet
   protect_from_forgery with: :null_session
 
+  def new
+  end
+
   def create
     user = User.from_omniauth(env["omniauth.auth"])
     session[:user_id] = user.id
