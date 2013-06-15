@@ -1,0 +1,18 @@
+%p
+  = link_to "Create an account", "/auth/identity/register"
+  or login below.
+
+= form_tag "/auth/identity/callback" do
+  %div
+    .field
+      = label_tag :auth_key, "Email"
+      %br
+      = text_field_tag :auth_key
+  %div
+    .field
+      = label_tag :password
+      %br
+      = password_field_tag :password
+  %div
+    .actions
+      = submit_tag "Login"

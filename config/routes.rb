@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  root 'messages#index'
+  get 'help/detail'
+  post 'auth/:provider/callback', to: 'sessions#create'
+  get :signout, to: 'sessions#destroy'
+  get 'auth/failure', to: redirect('/')
+  root 'help#detail'
   resources :messages
+  resources :identities, only: :new
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
