@@ -29,7 +29,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'omniauth-identity'
+gem 'omniauth-identity', github: 'intridea/omniauth-identity'
 gem 'omniauth'
 gem 'authority'
 gem 'rolify'
