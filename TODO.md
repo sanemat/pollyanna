@@ -4,6 +4,7 @@
   - mandrill
 - help以外にdigest認証
 - messageをeditableに
+- help#detail 完成させる
 
 ## done
 - omniauth
