@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'help/detail'
-  get 'auth/:provider/callback' => 'sessions#create', as: :callback_auth_provider
+  get 'auth/:provider/callback' => 'sessions#create'
   root 'help#detail'
   resources :messages
   # The priority is based upon order of creation: first created -> highest priority.
