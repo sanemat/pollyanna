@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'help/detail'
   post 'auth/:provider/callback', to: 'sessions#create'
-  get 'signout', to: 'sessions#destroy', as: :signout
+  get :signout, to: 'sessions#destroy'
   get 'auth/failure', to: redirect('/')
   root 'help#detail'
   resources :messages
