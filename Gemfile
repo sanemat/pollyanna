@@ -38,6 +38,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails', '>= 2.14.0.rc'
   gem 'spring'
+  gem 'dotenv-rails'
 end
 
 group :development do
