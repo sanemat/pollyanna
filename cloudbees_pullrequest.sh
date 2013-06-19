@@ -12,8 +12,8 @@ curl -v \
   -d@- \
   "https://api.github.com/repos/sanemat/pollyanna/pulls" <<EOF
   {
-    "title": "title",
-    "body": "body",
+    "title": "Bundle $BUNDLE_DATETIME",
+    "body": ":hamster::hamster::hamster:",
     "head": "bot-motoko:feature/bundle-update-$BUNDLE_DATETIME",
     "base": "master"
    }
