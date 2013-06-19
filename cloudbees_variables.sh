@@ -5,4 +5,3 @@ export PASSWORD=
 export NODE_VERSION=0.10.4
 export EXECJS_RUNTIME=Node
 export BUNDLE_DATETIME=$(TZ=JST-9 date +%Y%m%d%H%M%S)
-echo -n ${BUNDLE_DATETIME} > ./bundle_datetime.txt
