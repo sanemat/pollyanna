@@ -26,3 +26,6 @@
 
 # Ignore coveralls
 /coverage
+
+# Ignore cloudbees build version
+/bundle_datetime.txt
