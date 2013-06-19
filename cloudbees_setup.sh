@@ -1,4 +1,4 @@
-source ./variables.sh
-source ./postgres.sh
-source ./nodejs.sh
-source ./build.sh
+source ./cloudbees_variables.sh
+source ./cloudbees_postgres.sh
+source ./cloudbees_nodejs.sh
+source ./cloudbees_build.sh
