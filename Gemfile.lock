@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: a9a33c59f64084733baec62aed4852fde6a88156
+  revision: 2b817a5e89ac0e7aeb894a40ae7151a0cf3cef16
   specs:
     actionmailer (4.1.0.beta)
       actionpack (= 4.1.0.beta)
@@ -120,7 +120,7 @@ GEM
       slop (~> 3.4)
     pry-rails (0.3.1)
       pry (>= 0.9.10)
-    puma (2.0.1)
+    puma (2.1.0)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-test (0.6.2)
