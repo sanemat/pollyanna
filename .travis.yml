@@ -2,6 +2,7 @@ language: ruby
 rvm:
   - 2.0.0
 before_install:
+  - gem install bundler
   - gem update bundler
 before_script:
   - cp config/database.yml.example config/database.yml
