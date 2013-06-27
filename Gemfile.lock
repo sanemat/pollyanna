@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: da8cb2acc44b94974a1be70f8cc679cfc5f6dc6e
+  revision: 34127787bbe28cedb8f9a493531582b05f0b437a
   specs:
     actionmailer (4.1.0.beta)
       actionpack (= 4.1.0.beta)
@@ -57,7 +57,7 @@ GEM
   specs:
     activerecord-deprecated_finders (1.0.3)
     arel (4.0.0)
-    atomic (1.1.9)
+    atomic (1.1.10)
     authority (2.6.0)
       activesupport (>= 3.0.0)
       rake (>= 0.8.7)
